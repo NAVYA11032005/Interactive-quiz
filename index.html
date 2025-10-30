@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainly Bowl</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1 class="quiz-title">Brainly Bowl</h1>
+            <p class="quiz-description">Test your JavaScript skills with this interactive quiz. Select the best answer for each question.</p>
+            <div class="timer" id="timer">Time: 60s</div>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        
+        <div class="question-counter">
+            Question <span id="current-question">1</span> of <span id="total-questions">5</span>
+        </div>
+        
+        <div class="quiz-content">
+            <div id="question-container" class="question-container">
+                <h2 class="question-text" id="question-text">Question text will appear here</h2>
+                <div class="options-container" id="options-container">
+                    <!-- Options will be dynamically inserted here -->
+                </div>
+            </div>
+            
+            <div id="results-container" class="results-container hidden">
+                <div class="score-circle" id="score-circle">
+                    <span class="score-text" id="score-text">0%</span>
+                </div>
+                <h2 class="score-message" id="score-message">Quiz Completed!</h2>
+                <p class="score-details" id="score-details">You scored 0 out of 5 questions correctly.</p>
+                
+                <div class="answers-container" id="answers-container">
+                    <!-- Answers will be dynamically inserted here -->
+                </div>
+                
+                <button id="restart-btn" class="btn btn-primary pulse">Take Quiz Again</button>
+            </div>
+        </div>
+        
+        <div class="quiz-footer">
+            <button id="prev-btn" class="btn btn-secondary" disabled>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px;">
+                    <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Previous
+            </button>
+            <button id="next-btn" class="btn btn-primary">
+                Next
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 8px;">
+                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html> 
